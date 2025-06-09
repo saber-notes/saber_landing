@@ -10,21 +10,18 @@ void main() {
     lang: 'en',
     styles: [
       css.import('https://fonts.googleapis.com/css?family=Neucha'),
+      css.import('/globals.css'),
     ],
-    meta: {
+    meta: const {
       'color-scheme': 'light dark',
       'description': 'The notes app built for handwriting',
     },
-    head: [
-      DomComponent(
-        tag: 'link',
-        attributes: {'rel': 'stylesheet', 'href': '/globals.css'},
-      ),
+    head: const [
       DomComponent(
         tag: 'link',
         attributes: {'rel': 'icon', 'href': '/favicon.ico'},
       ),
     ],
-    body: App(),
+    body: const App(),
   ));
 }

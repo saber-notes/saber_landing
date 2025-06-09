@@ -42,7 +42,7 @@ JasprOptions get defaultJasprOptions => JasprOptions(
 
     prefix4.Home: ClientTarget<prefix4.Home>('pages/home'),
   },
-  styles: () => [...prefix3.About.styles],
+  styles: () => [...prefix3.About.styles, ...prefix4.Home.styles],
 );
 
 Map<String, dynamic> _prefix0Badge(prefix0.Badge c) => {

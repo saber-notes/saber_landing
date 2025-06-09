@@ -9,12 +9,11 @@ class Home extends StatelessComponent {
 
   @override
   Iterable<Component> build(BuildContext context) sync* {
-    yield DomComponent(
-      tag: 'link',
-      attributes: {'rel': 'stylesheet', 'href': '/home.css'},
-    );
     yield Header();
     yield Badges();
     yield Features();
   }
+
+  @css
+  static final styles = [css.import('/home.css')];
 }
