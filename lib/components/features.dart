@@ -1,6 +1,5 @@
 import 'package:jaspr/jaspr.dart';
 
-@client
 class Features extends StatelessComponent {
   const Features({super.key});
 

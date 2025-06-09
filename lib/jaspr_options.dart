@@ -5,11 +5,10 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/jaspr.dart';
-import 'package:saber_landing/components/badge.dart' as prefix0;
-import 'package:saber_landing/components/badges.dart' as prefix1;
-import 'package:saber_landing/components/features.dart' as prefix2;
-import 'package:saber_landing/pages/about.dart' as prefix3;
-import 'package:saber_landing/pages/home.dart' as prefix4;
+import 'package:saber_landing/components/rough_notation_initiator.dart'
+    as prefix0;
+import 'package:saber_landing/pages/about.dart' as prefix1;
+import 'package:saber_landing/pages/home.dart' as prefix2;
 
 /// Default [JasprOptions] for use with your jaspr project.
 ///
@@ -29,26 +28,10 @@ import 'package:saber_landing/pages/home.dart' as prefix4;
 /// ```
 JasprOptions get defaultJasprOptions => JasprOptions(
   clients: {
-    prefix0.Badge: ClientTarget<prefix0.Badge>(
-      'components/badge',
-      params: _prefix0Badge,
-    ),
-
-    prefix1.Badges: ClientTarget<prefix1.Badges>('components/badges'),
-
-    prefix2.Features: ClientTarget<prefix2.Features>('components/features'),
-
-    prefix3.About: ClientTarget<prefix3.About>('pages/about'),
-
-    prefix4.Home: ClientTarget<prefix4.Home>('pages/home'),
+    prefix0.RoughNotationInitiator:
+        ClientTarget<prefix0.RoughNotationInitiator>(
+          'components/rough_notation_initiator',
+        ),
   },
-  styles: () => [...prefix3.About.styles, ...prefix4.Home.styles],
+  styles: () => [...prefix1.About.styles, ...prefix2.Home.styles],
 );
-
-Map<String, dynamic> _prefix0Badge(prefix0.Badge c) => {
-  'linkHref': c.linkHref,
-  'imageName': c.imageName,
-  'imageAlt': c.imageAlt,
-  'imageWidth': c.imageWidth,
-  'imageHeight': c.imageHeight,
-};

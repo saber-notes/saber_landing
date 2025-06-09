@@ -1,6 +1,5 @@
 import 'package:jaspr/jaspr.dart';
 
-@client
 class Badge extends StatelessComponent {
   const Badge({
     required this.linkHref,

@@ -1,7 +1,6 @@
 import 'package:jaspr/jaspr.dart';
 import 'package:saber_landing/components/badge.dart';
 
-@client
 class Badges extends StatelessComponent {
   const Badges({super.key});
 
