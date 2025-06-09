@@ -21,15 +21,6 @@ class App extends StatelessComponent {
           title: 'Saber: Privacy Policy',
           builder: (context, state) => const About(),
         ),
-        for (final typo in const [
-          '/privacy-policy',
-          '/privacypolicy',
-          '/privacy',
-        ])
-          Route(
-            path: typo,
-            redirect: (context, state) => '/privacy_policy',
-          ),
       ]),
     ]);
   }
