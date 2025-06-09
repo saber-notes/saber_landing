@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+      {
+        "appID": "3DB8QX4Z23.com.adilhanney.saber",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

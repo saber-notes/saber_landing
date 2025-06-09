@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.adilhanney.saber",
+    "sha256_cert_fingerprints": [
+        "0D:E2:BD:9D:88:97:07:0C:5E:17:B4:02:58:31:05:E1:29:6B:97:29:CA:18:51:DA:C4:C2:BB:44:6B:C1:8D:4E",
+        "CC:8F:D6:88:FA:55:BC:FF:37:13:83:DF:BD:8E:F6:7D:4C:21:D2:A6:AA:F3:06:B6:0C:81:EF:21:23:EA:A7:E2"
+    ]
+  }
+}]

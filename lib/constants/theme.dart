@@ -1,5 +1,6 @@
 import 'package:jaspr/jaspr.dart';
 
-// As your css styles are defined using just Dart, you can simply
-// use global variables or methods for common things like colors.
-const primaryColor = Color('#01589B');
+const primaryColor = Color.variable('--primary-color');
+const highlightColor = Color.variable('--highlight-color');
+const backgroundColor = Color.variable('--background');
+const onBackgroundColor = Color.variable('--on-background');

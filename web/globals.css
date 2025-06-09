@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #ffd14b;
+  --highlight-color: #ffe28e;
+
+  --background: #fffbff;
+  --on-background: #1e1b16;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color-scheme: light dark;
+  background: var(--background);
+  color: var(--on-background);
+  /* fallbacks from https://github.com/system-fonts/modern-font-stacks#handwritten */
+  font-family: Neucha, Dekko, 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --highlight-color: #806000;
+    --background: #1e1b16;
+    --on-background: #e8e2d9;
+  }
+}
+@media (prefers-constrast: more) {
+  :root {
+    --highlight-color: rgba(255, 209, 75, 0.1);
+  }
+  body, main {
+    /* use a non-handwritten font in high contrast mode */
+    font-family: 'Atkinson Hyperlegible', 'Adwaita Sans', Inter, Roboto, system-ui, sans-serif;
+  }
+}
+@media (prefers-color-scheme: dark) and (prefers-constrast: more) {
+  :root {
+    --background: black;
+    --on-background: white;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 40rem; /* big enough to fit the badges nicely */
+  margin: 0 auto;
+  position: relative; /* rough-notation is positioned absolutely inside this */
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+h2 {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
