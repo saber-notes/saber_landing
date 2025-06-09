@@ -1,8 +1,7 @@
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
-
-import 'pages/about.dart';
-import 'pages/home.dart';
+import 'package:saber_landing/pages/home.dart';
+import 'package:saber_landing/pages/privacy_policy.dart';
 
 class App extends StatelessComponent {
   const App({super.key});
@@ -17,9 +16,9 @@ class App extends StatelessComponent {
           builder: (context, state) => const Home(),
         ),
         Route(
-          path: '/privacy_policy',
-          title: 'Saber: Privacy Policy',
-          builder: (context, state) => const About(),
+          path: '/privacy-policy',
+          title: 'Saber\'s Privacy Policy',
+          builder: (context, state) => const PrivacyPolicy(),
         ),
       ]),
     ]);

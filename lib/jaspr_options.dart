@@ -7,8 +7,7 @@
 import 'package:jaspr/jaspr.dart';
 import 'package:saber_landing/components/rough_notation_initiator.dart'
     as prefix0;
-import 'package:saber_landing/pages/about.dart' as prefix1;
-import 'package:saber_landing/pages/home.dart' as prefix2;
+import 'package:saber_landing/pages/home.dart' as prefix1;
 
 /// Default [JasprOptions] for use with your jaspr project.
 ///
@@ -33,5 +32,5 @@ JasprOptions get defaultJasprOptions => JasprOptions(
           'components/rough_notation_initiator',
         ),
   },
-  styles: () => [...prefix1.About.styles, ...prefix2.Home.styles],
+  styles: () => [...prefix1.Home.styles],
 );

@@ -16,7 +16,7 @@ class Features extends StatelessComponent {
         ]),
         p([
           text('You can also read the '),
-          a(href: '/privacy_policy', [text('privacy policy')]),
+          a(href: '/privacy-policy', [text('privacy policy')]),
           text('.'),
         ])
       ]),
