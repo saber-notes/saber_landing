@@ -20,6 +20,10 @@ class App extends StatelessComponent {
           title: 'Saber\'s Privacy Policy',
           builder: (context, state) => const PrivacyPolicy(),
         ),
+        Route(
+          path: '/privacy_policy',
+          redirect: (context, state) => '/privacy-policy',
+        ),
       ]),
     ]);
   }
