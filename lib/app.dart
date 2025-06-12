@@ -2,6 +2,7 @@ import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
 import 'package:saber_landing/pages/home.dart';
 import 'package:saber_landing/pages/privacy_policy.dart';
+import 'package:saber_landing/pages/support.dart';
 
 class App extends StatelessComponent {
   const App({super.key});
@@ -26,6 +27,11 @@ class App extends StatelessComponent {
           path: '/privacy_policy',
           redirect: (context, state) => '/privacy-policy',
           settings: RouteSettings(priority: 0),
+        ),
+        Route(
+          path: '/support',
+          title: 'Support with Saber',
+          builder: (context, state) => const Support(),
         ),
       ]),
     ]);
