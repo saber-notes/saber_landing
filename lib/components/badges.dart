@@ -70,13 +70,6 @@ class Badges extends AsyncStatelessComponent {
         imageWidth: 468,
         imageHeight: 468,
       ),
-      Badge(
-        linkHref: 'https://snapcraft.io/saber',
-        imageName: 'snap-badge.png',
-        imageAlt: 'Get it from the Snap Store',
-        imageWidth: 364,
-        imageHeight: 112,
-      ),
     ]);
   }
 }
