@@ -35,6 +35,7 @@ class _RoughNotationInitiatorState extends State<RoughNotationInitiator> {
   @override
   Iterable<Component> build(BuildContext context) sync* {
     yield script(
-        src: 'https://unpkg.com/rough-notation/lib/rough-notation.iife.js', []);
+      src: 'https://unpkg.com/rough-notation/lib/rough-notation.iife.js',
+    );
   }
 }
