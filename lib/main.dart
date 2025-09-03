@@ -11,6 +11,8 @@ void main() {
     styles: [
       css.import('https://fonts.googleapis.com/css?family=Neucha'),
       css.import('/globals.css'),
+      css.import(
+          'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap'),
     ],
     meta: const {
       'color-scheme': 'light dark',

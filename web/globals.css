@@ -31,7 +31,7 @@ html, body {
   }
   body, main {
     /* use a non-handwritten font in high contrast mode */
-    font-family: 'Atkinson Hyperlegible', 'Adwaita Sans', Inter, Roboto, system-ui, sans-serif;
+    font-family: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Adwaita Sans', Inter, Roboto, system-ui, sans-serif;
   }
 }
 @media (prefers-color-scheme: dark) and (prefers-constrast: more) {
