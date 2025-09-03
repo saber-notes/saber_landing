@@ -25,6 +25,8 @@ html, body {
 }
 @media (prefers-constrast: more) {
   :root {
+    --background: white;
+    --on-background: black;
     --highlight-color: rgba(255, 209, 75, 0.1);
   }
   body, main {
