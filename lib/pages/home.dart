@@ -10,13 +10,11 @@ class Home extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return fragment([
+      link(href: '/home.css', rel: 'stylesheet'),
       Header(),
       Badges(),
       Features(),
       const RoughNotationInitiator(),
     ]);
   }
-
-  @css
-  static List<StyleRule> get styles => [css.import('/home.css')];
 }
