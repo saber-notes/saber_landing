@@ -1,6 +1,7 @@
 import 'package:jaspr/server.dart';
 import 'package:saber_landing/app.dart';
 import 'package:saber_landing/jaspr_options.dart';
+import 'package:saber_landing/styles/globals.css.dart';
 
 void main() {
   Jaspr.initializeApp(options: defaultJasprOptions);
@@ -8,9 +9,7 @@ void main() {
   runApp(Document(
     title: 'Saber',
     lang: 'en',
-    styles: [
-      css.import('/globals.css'),
-    ],
+    styles: globalsCss,
     meta: const {
       'color-scheme': 'light dark',
       'description': 'The notes app built for handwriting',

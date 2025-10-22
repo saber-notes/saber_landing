@@ -36,7 +36,6 @@ class Features extends StatelessComponent {
         ]),
         p([
           text('The highlighter also renders '),
-          // TODO(adil192): Make this underlineMe a component
           span(classes: 'underlineMe', [text('underneath')]),
           text(' the text, so you can still see the text clearly.')
         ]),
