@@ -9,7 +9,7 @@ class Home extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return Component.fragment([
+    return fragment([
       Header(),
       Badges(),
       Features(),
@@ -18,5 +18,5 @@ class Home extends StatelessComponent {
   }
 
   @css
-  static final styles = [css.import('/home.css')];
+  static List<StyleRule> get styles => [css.import('/home.css')];
 }

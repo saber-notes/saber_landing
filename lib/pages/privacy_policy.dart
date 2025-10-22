@@ -6,7 +6,7 @@ class PrivacyPolicy extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return Component.fragment([
+    return fragment([
       const PrivacyPolicyFromMarkdown(),
       br(),
       p([

@@ -25,7 +25,8 @@ void main() {
         'crossorigin': '',
       }),
       Component.element(tag: 'link', attributes: {
-        'href': 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Neucha&display=swap',
+        'href':
+            'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Neucha&display=swap',
         'rel': 'stylesheet',
       }),
       Component.element(

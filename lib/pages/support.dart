@@ -7,7 +7,7 @@ class Support extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return Component.fragment([
+    return fragment([
       h1([text('Support with Saber')]),
       p([
         text(
@@ -58,5 +58,5 @@ class Support extends StatelessComponent {
   }
 
   @css
-  static final styles = [css.import('/support.css')];
+  static List<StyleRule> get styles => [css.import('/support.css')];
 }
