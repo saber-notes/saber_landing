@@ -14,25 +14,17 @@ void main() {
       'color-scheme': 'light dark',
       'description': 'The notes app built for handwriting',
     },
-    head: const [
-      Component.element(tag: 'link', attributes: {
-        'rel': 'preconnect',
-        'href': 'https://fonts.googleapis.com',
-      }),
-      Component.element(tag: 'link', attributes: {
-        'rel': 'preconnect',
-        'href': 'https://fonts.gstatic.com',
+    head: [
+      link(href: 'https://fonts.googleapis.com', rel: 'preconnect'),
+      link(href: 'https://fonts.gstatic.com', rel: 'preconnect', attributes: {
         'crossorigin': '',
       }),
-      Component.element(tag: 'link', attributes: {
-        'href':
+      link(
+        rel: 'stylesheet',
+        href:
             'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Neucha&display=swap',
-        'rel': 'stylesheet',
-      }),
-      Component.element(
-        tag: 'link',
-        attributes: {'rel': 'icon', 'href': '/favicon.ico'},
       ),
+      link(href: '/favicon.ico', rel: 'icon'),
     ],
     body: const App(),
   ));
