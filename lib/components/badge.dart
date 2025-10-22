@@ -16,10 +16,10 @@ class Badge extends StatelessComponent {
   final int imageHeight;
 
   @override
-  Iterable<Component> build(BuildContext context) sync* {
+  Component build(BuildContext context) {
     final imageSrc =
         'https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/$imageName';
-    yield a(href: linkHref, [
+    return a(href: linkHref, [
       img(src: imageSrc, alt: imageAlt, width: imageWidth, height: imageHeight),
     ]);
   }

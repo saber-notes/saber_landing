@@ -8,11 +8,13 @@ class Home extends StatelessComponent {
   const Home({super.key});
 
   @override
-  Iterable<Component> build(BuildContext context) sync* {
-    yield Header();
-    yield Badges();
-    yield Features();
-    yield const RoughNotationInitiator();
+  Component build(BuildContext context) {
+    return Component.fragment([
+      Header(),
+      Badges(),
+      Features(),
+      const RoughNotationInitiator(),
+    ]);
   }
 
   @css

@@ -4,8 +4,8 @@ class Header extends StatelessComponent {
   const Header({super.key});
 
   @override
-  Iterable<Component> build(BuildContext context) sync* {
-    yield div(classes: 'header', [
+  Component build(BuildContext context) {
+    return div(classes: 'header', [
       h1(classes: 'title', [text('Saber')]),
       p(classes: 'subtitle', [text('Handwritten Notes')]),
       img(

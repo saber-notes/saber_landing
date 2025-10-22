@@ -4,8 +4,8 @@ class Features extends StatelessComponent {
   const Features({super.key});
 
   @override
-  Iterable<Component> build(BuildContext context) sync* {
-    yield div(classes: 'features', [
+  Component build(BuildContext context) {
+    return div(classes: 'features', [
       div(classes: 'feature', [
         h2([text('Private')]),
         p([text('Only you can access your notes!')]),

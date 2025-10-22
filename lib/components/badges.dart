@@ -21,10 +21,10 @@ class Badges extends AsyncStatelessComponent {
   }
 
   @override
-  Stream<Component> build(BuildContext context) async* {
+  Future<Component> build(BuildContext context) async {
     final versionName = await getVersionName();
 
-    yield div(classes: 'badges', [
+    return div(classes: 'badges', [
       Badge(
         linkHref:
             'https://play.google.com/store/apps/details?id=com.adilhanney.saber',

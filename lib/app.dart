@@ -8,8 +8,8 @@ class App extends StatelessComponent {
   const App({super.key});
 
   @override
-  Iterable<Component> build(BuildContext context) sync* {
-    yield DomComponent(tag: 'main', classes: 'main', children: [
+  Component build(BuildContext context) {
+    return Component.element(tag: 'main', classes: 'main', children: [
       Router(routes: [
         Route(
           path: '/',
