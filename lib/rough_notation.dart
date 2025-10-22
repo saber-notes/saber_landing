@@ -76,16 +76,21 @@ class RoughNotationController {
           annotate(
             element,
             AnnotationConfig(
-                type: 'highlight', color: highlightColor.value, iterations: 2),
+              type: 'highlight',
+              color: highlightColor.value,
+              iterations: 2,
+            ),
           )
         else
           annotate(
             element,
             AnnotationConfig(
-                type: 'underline', color: highlightColor.value, iterations: 2),
+              type: 'underline',
+              color: highlightColor.value,
+              iterations: 2,
+            ),
           ),
-    ])
-      ..show();
+    ])..show();
   }
 
   void hideAnnotations() {

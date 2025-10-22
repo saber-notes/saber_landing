@@ -8,10 +8,13 @@ class Badges extends AsyncStatelessComponent {
   const Badges({super.key});
 
   Future<String> getVersionName() async {
-    final response = await http
-        .get(Uri.parse('https://api.github.com/repos/saber-notes/saber/tags'));
-    assert(response.statusCode >= 200 && response.statusCode < 300,
-        'Failed to fetch version name: ${response.statusCode} ${response.body}');
+    final response = await http.get(
+      Uri.parse('https://api.github.com/repos/saber-notes/saber/tags'),
+    );
+    assert(
+      response.statusCode >= 200 && response.statusCode < 300,
+      'Failed to fetch version name: ${response.statusCode} ${response.body}',
+    );
     final json = jsonDecode(response.body) as List<dynamic>;
     final versionWithV = json[0]['name'] as String;
     assert(versionWithV.startsWith('v'));

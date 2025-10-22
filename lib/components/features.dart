@@ -10,57 +10,66 @@ class Features extends StatelessComponent {
         h2([text('Private')]),
         p([text('Only you can access your notes!')]),
         p([
-          text('You can sync your notes across devices knowing that they are '
-              'encrypted and stored securely, and not even the server can read '
-              'them.')
+          text(
+            'You can sync your notes across devices knowing that they are '
+            'encrypted and stored securely, and not even the server can read '
+            'them.',
+          ),
         ]),
         p([
           text('You can also read the '),
           a(href: '/privacy-policy', [text('privacy policy')]),
           text('.'),
-        ])
+        ]),
       ]),
       div(classes: 'feature', [
         h2([text('Cross-platform')]),
         p([
-          text('You can sync and edit your notes across all your devices, '
-              'whether they\'re a phone, tablet, or computer.')
+          text(
+            'You can sync and edit your notes across all your devices, '
+            'whether they\'re a phone, tablet, or computer.',
+          ),
         ]),
       ]),
       div(classes: 'feature', [
         h2([text('The perfect highlighter')]),
         p([
           text(
-              'Saber\'s highlighter doesn\'t overlap with itself and change color '
-              'when you go over the same area again.')
+            'Saber\'s highlighter doesn\'t overlap with itself and change color '
+            'when you go over the same area again.',
+          ),
         ]),
         p([
           text('The highlighter also renders '),
           span(classes: 'underlineMe', [text('underneath')]),
-          text(' the text, so you can still see the text clearly.')
+          text(' the text, so you can still see the text clearly.'),
         ]),
       ]),
       div(classes: 'feature', [
         h2([text('Stay organized')]),
         p([
           text(
-              'Saber lets you organize your notes into unlimited nested folders.')
+            'Saber lets you organize your notes into unlimited nested folders.',
+          ),
         ]),
         p([
           text(
-              'You can also quickly access your most recent notes from the home screen.')
+            'You can also quickly access your most recent notes from the home screen.',
+          ),
         ]),
       ]),
       div(classes: 'feature', [
         h2([text('Cohesive dark mode')]),
         p([
           text(
-              'Saber\'s dark mode doesn\'t just darken the UI; it also darkens the '
-              'notes themselves.')
+            'Saber\'s dark mode doesn\'t just darken the UI; it also darkens the '
+            'notes themselves.',
+          ),
         ]),
         p([
           text(
-              'This means that you can read your notes in the dark without hurting your eyes.')
+            'This means that you can read your notes in the dark without hurting your eyes.',
+          ),
         ]),
       ]),
       div(classes: 'feature', [
@@ -77,7 +86,7 @@ class Features extends StatelessComponent {
               width: 100,
               height: 41,
             ),
-            text('GitHub')
+            text('GitHub'),
           ]),
           text('.'),
         ]),

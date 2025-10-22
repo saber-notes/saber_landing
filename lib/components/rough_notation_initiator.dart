@@ -2,8 +2,10 @@ import 'package:jaspr/jaspr.dart';
 import 'package:universal_web/js_interop.dart';
 import 'package:universal_web/web.dart';
 
-@Import.onWeb('package:saber_landing/rough_notation.dart',
-    show: [#RoughNotationController])
+@Import.onWeb(
+  'package:saber_landing/rough_notation.dart',
+  show: [#RoughNotationController],
+)
 import 'rough_notation_initiator.imports.dart';
 
 @client
@@ -22,7 +24,10 @@ class _RoughNotationInitiatorState extends State<RoughNotationInitiator> {
     super.initState();
     if (kIsWeb) {
       window.setTimeout(
-          roughNotationController.showAnnotations.toJS, null, 300);
+        roughNotationController.showAnnotations.toJS,
+        null,
+        300,
+      );
     }
   }
 

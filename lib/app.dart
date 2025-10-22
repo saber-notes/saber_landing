@@ -9,31 +9,37 @@ class App extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return Component.element(tag: 'main', classes: 'main', children: [
-      Router(routes: [
-        Route(
-          path: '/',
-          title: 'Saber: Handwritten Notes',
-          builder: (context, state) => const Home(),
-          settings: RouteSettings(priority: 1),
+    return Component.element(
+      tag: 'main',
+      classes: 'main',
+      children: [
+        Router(
+          routes: [
+            Route(
+              path: '/',
+              title: 'Saber: Handwritten Notes',
+              builder: (context, state) => const Home(),
+              settings: RouteSettings(priority: 1),
+            ),
+            Route(
+              path: '/privacy-policy',
+              title: 'Saber\'s Privacy Policy',
+              builder: (context, state) => const PrivacyPolicy(),
+              settings: RouteSettings(priority: 0.7),
+            ),
+            Route(
+              path: '/privacy_policy',
+              redirect: (context, state) => '/privacy-policy',
+              settings: RouteSettings(priority: 0),
+            ),
+            Route(
+              path: '/support',
+              title: 'Support with Saber',
+              builder: (context, state) => const Support(),
+            ),
+          ],
         ),
-        Route(
-          path: '/privacy-policy',
-          title: 'Saber\'s Privacy Policy',
-          builder: (context, state) => const PrivacyPolicy(),
-          settings: RouteSettings(priority: 0.7),
-        ),
-        Route(
-          path: '/privacy_policy',
-          redirect: (context, state) => '/privacy-policy',
-          settings: RouteSettings(priority: 0),
-        ),
-        Route(
-          path: '/support',
-          title: 'Support with Saber',
-          builder: (context, state) => const Support(),
-        ),
-      ]),
-    ]);
+      ],
+    );
   }
 }
