@@ -38,6 +38,16 @@ jobs:
           cache: true
           cache-key: 'flutter-:os:-:channel:-:version:-:arch:'
 
+      - name: Setup cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .dart_tool/
+            build/
+          key: ${{ runner.OS }}-saber_landing-${{ hashFiles('**/pubspec.lock') }}-${{ hashFiles('**/*.dart') }}
+          restore-keys: |
+            ${{ runner.OS }}-saber_landing-
+
       - name: Install Jaspr CLI
         run: dart pub global activate jaspr_cli
         
