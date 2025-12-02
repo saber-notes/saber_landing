@@ -1,6 +1,8 @@
 import 'package:http/http.dart' as http;
 import 'package:jaspr/server.dart';
-import 'package:jaspr_markdown/jaspr_markdown.dart';
+import 'package:jaspr_content/components/markdown.dart';
+import 'package:jaspr_content/jaspr_content.dart';
+import 'package:jaspr_content/theme.dart';
 
 class PrivacyPolicyFromMarkdown extends AsyncStatelessComponent {
   const PrivacyPolicyFromMarkdown({super.key});
@@ -18,6 +20,9 @@ class PrivacyPolicyFromMarkdown extends AsyncStatelessComponent {
     );
     final markdown = response.body;
 
-    return Markdown(markdown: markdown);
+    return Content.wrapTheme(
+      const ContentTheme.none(),
+      child: Markdown(content: markdown),
+    );
   }
 }

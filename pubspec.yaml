@@ -8,7 +8,7 @@ environment:
 dependencies:
   http: ^1.4.0
   jaspr: ^0.21.7
-  jaspr_markdown: ^0.2.0
+  jaspr_content: ^0.4.4
   jaspr_router: ^0.8.0
   universal_web: ^1.1.0+2
 

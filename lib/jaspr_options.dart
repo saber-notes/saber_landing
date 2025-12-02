@@ -31,4 +31,5 @@ JasprOptions get defaultJasprOptions => JasprOptions(
           'components/rough_notation_initiator',
         ),
   },
+  styles: () => [],
 );
