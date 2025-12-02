@@ -1,7 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'package:jaspr/server.dart';
 import 'package:jaspr_content/components/markdown.dart';
-import 'package:jaspr_content/jaspr_content.dart';
 import 'package:jaspr_content/theme.dart';
 
 class PrivacyPolicyFromMarkdown extends AsyncStatelessComponent {

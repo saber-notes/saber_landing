@@ -17,8 +17,7 @@ class Badge extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    final imageSrc =
-        'https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/$imageName';
+    final imageSrc = '/images/badges/$imageName';
     return a(href: linkHref, [
       img(src: imageSrc, alt: imageAlt, width: imageWidth, height: imageHeight),
     ]);
