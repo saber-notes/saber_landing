@@ -54,16 +54,18 @@ main > div {
 }
 
 main .badges {
-  margin-left: 2ch;
-  margin-right: 2ch;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  font-size: 0;
+  gap: 0.2rem;
+  margin-inline: 0.2rem;
 }
 .badges img {
   width: auto;
   height: 3.5rem;
+  font-size: 1rem;
 }
 
 @media (prefers-constrast: more) {
