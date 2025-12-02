@@ -3,13 +3,13 @@ description: A new Jaspr project
 version: 0.0.1
 
 environment:
-  sdk: '>=3.9.0 <4.0.0'
+  sdk: '>=3.10.0 <4.0.0'
 
 dependencies:
   http: ^1.4.0
-  jaspr: ^0.21.6
-  jaspr_markdown: ^0.1.4
-  jaspr_router: ^0.7.0
+  jaspr: ^0.21.7
+  jaspr_markdown: ^0.2.0
+  jaspr_router: ^0.8.0
   universal_web: ^1.1.0+2
 
 dev_dependencies:
