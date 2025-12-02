@@ -31,14 +31,14 @@ class Badges extends AsyncStatelessComponent {
       Badge(
         linkHref:
             'https://play.google.com/store/apps/details?id=com.adilhanney.saber',
-        imageName: 'google-play-badge.png',
+        imageName: 'google-play-badge.svg',
         imageAlt: 'Get it on Google Play',
         imageWidth: 564,
         imageHeight: 168,
       ),
       Badge(
         linkHref: 'https://f-droid.org/packages/com.adilhanney.saber/',
-        imageName: 'f-droid-badge.png',
+        imageName: 'f-droid-badge.svg',
         imageAlt: 'Get it on F-Droid',
         imageWidth: 564,
         imageHeight: 168,
@@ -68,7 +68,7 @@ class Badges extends AsyncStatelessComponent {
       Badge(
         linkHref:
             'https://github.com/saber-notes/saber/releases/download/v$versionName/Saber-$versionName-x86_64.AppImage',
-        imageName: 'appimage-logo.png',
+        imageName: 'appimage-logo.svg',
         imageAlt: 'Get it as an AppImage',
         imageWidth: 468,
         imageHeight: 468,
