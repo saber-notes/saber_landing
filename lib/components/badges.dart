@@ -8,6 +8,7 @@ class Badges extends AsyncStatelessComponent {
   const Badges({super.key});
 
   Future<String> getVersionName() async {
+    if (kDebugMode) return '1.2.3'; // Don't spam GitHub in debug mode
     final response = await http.get(
       Uri.parse('https://api.github.com/repos/saber-notes/saber/tags'),
     );
