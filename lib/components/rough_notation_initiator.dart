@@ -1,6 +1,4 @@
 import 'package:jaspr/jaspr.dart';
-import 'package:universal_web/js_interop.dart';
-import 'package:universal_web/web.dart';
 
 @Import.onWeb(
   'package:saber_landing/rough_notation.dart',
@@ -22,13 +20,7 @@ class _RoughNotationInitiatorState extends State<RoughNotationInitiator> {
   @override
   void initState() {
     super.initState();
-    if (kIsWeb) {
-      window.setTimeout(
-        roughNotationController.showAnnotations.toJS,
-        null,
-        300,
-      );
-    }
+    if (kIsWeb) roughNotationController.showAnnotationsWhenReady();
   }
 
   @override
@@ -42,6 +34,7 @@ class _RoughNotationInitiatorState extends State<RoughNotationInitiator> {
     return script(
       async: true,
       src: 'https://unpkg.com/rough-notation/lib/rough-notation.iife.js',
+      attributes: {'fetchpriority': 'low'},
     );
   }
 }

@@ -50,7 +50,18 @@ List<HTMLElement?> nodeListToDart(NodeList nodes) {
 class RoughNotationController {
   AnnotationGroup? _annotationGroup;
 
-  void showAnnotations() {
+  void showAnnotationsWhenReady() {
+    if (_annotationGroup != null) return;
+
+    if (document.readyState == "loading") {
+      document.addEventListener("DOMContentLoaded", _showAnnotations.toJS);
+    } else {
+      _showAnnotations();
+    }
+  }
+
+  void _showAnnotations() {
+    if (_annotationGroup != null) return;
     print('Showing annotations...');
 
     final headerElem = document.querySelector('.header');
@@ -96,5 +107,6 @@ class RoughNotationController {
   void hideAnnotations() {
     print('Hiding annotations...');
     _annotationGroup?.hide();
+    _annotationGroup = null;
   }
 }
