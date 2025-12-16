@@ -1,4 +1,4 @@
-import 'package:jaspr/server.dart';
+import 'package:jaspr/dom.dart';
 import 'package:saber_landing/styles/saber_fonts.dart';
 
 final globalsCss = [

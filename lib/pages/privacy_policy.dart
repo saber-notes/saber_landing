@@ -1,3 +1,4 @@
+import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:saber_landing/components/privacy_policy_from_markdown.dart';
 
@@ -6,15 +7,15 @@ class PrivacyPolicy extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return fragment([
+    return .fragment([
       const PrivacyPolicyFromMarkdown(),
       br(),
       p([
-        text('See this page on '),
+        .text('See this page on '),
         a(
           href:
               'https://github.com/saber-notes/saber/blob/main/privacy_policy.md',
-          [text('GitHub')],
+          [.text('GitHub')],
         ),
       ]),
     ]);

@@ -1,10 +1,11 @@
+import 'package:jaspr/dom.dart';
 import 'package:jaspr/server.dart';
 import 'package:saber_landing/app.dart';
-import 'package:saber_landing/jaspr_options.dart';
+import 'package:saber_landing/main.server.options.dart';
 import 'package:saber_landing/styles/globals.css.dart';
 
 void main() {
-  Jaspr.initializeApp(options: defaultJasprOptions);
+  Jaspr.initializeApp(options: defaultServerOptions);
 
   runApp(
     Document(

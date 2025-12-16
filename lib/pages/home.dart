@@ -1,3 +1,4 @@
+import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:saber_landing/components/badges.dart';
 import 'package:saber_landing/components/features.dart';
@@ -9,7 +10,7 @@ class Home extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return fragment([
+    return .fragment([
       link(href: '/home.css', rel: 'stylesheet'),
       Header(),
       Badges(),

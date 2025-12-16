@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'package:jaspr/dom.dart';
 import 'package:jaspr/server.dart';
 
 class Header extends StatelessComponent {
@@ -7,10 +8,10 @@ class Header extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return div(classes: 'header', [
-      h1(classes: 'title', [text('Saber')]),
-      p(classes: 'subtitle', [text('Handwritten Notes')]),
+      h1(classes: 'title', [.text('Saber')]),
+      p(classes: 'subtitle', [.text('Handwritten Notes')]),
       _IconImg(),
-      p(classes: 'summary', [text('The notes app built for handwriting')]),
+      p(classes: 'summary', [.text('The notes app built for handwriting')]),
     ]);
   }
 }

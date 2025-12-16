@@ -1,4 +1,4 @@
-import 'package:jaspr/server.dart';
+import 'package:jaspr/dom.dart';
 
 abstract class SaberFonts {
   static final sansSerif = FontFamily.list([

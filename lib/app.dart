@@ -9,7 +9,7 @@ class App extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return Component.element(
+    return .element(
       tag: 'main',
       classes: 'main',
       children: [
