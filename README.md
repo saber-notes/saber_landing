@@ -1,6 +1,9 @@
 # saber_landing
 
-A new Jaspr project
+This is the landing page for [Saber: Handwritten Notes](https://github.com/saber-notes/saber)
+built with [Jaspr](https://jaspr.site/).
+
+Go to https://saber.adil.hanney.org to see this website in action.
 
 ## Running the project
 
