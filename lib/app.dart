@@ -1,5 +1,6 @@
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
+import 'package:saber_landing/pages/faq.dart';
 import 'package:saber_landing/pages/home.dart';
 import 'package:saber_landing/pages/privacy_policy.dart';
 import 'package:saber_landing/pages/support.dart';
@@ -36,6 +37,11 @@ class App extends StatelessComponent {
               path: '/support',
               title: 'Support with Saber',
               builder: (context, state) => const Support(),
+            ),
+            Route(
+              path: '/faq',
+              title: 'Saber FAQ',
+              builder: (context, state) => const FaqPage(),
             ),
           ],
         ),

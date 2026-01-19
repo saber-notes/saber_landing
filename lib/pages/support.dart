@@ -17,6 +17,11 @@ class Support extends StatelessComponent {
           'you can reach out to the community and me here...',
         ),
       ]),
+      h2([.text('FAQ')]),
+      p([.text('View common questions and answers on the FAQ page.')]),
+      div(classes: 'btn-wrap', [
+        a(href: '/faq', classes: 'btn btn-primary', [.text('FAQ')]),
+      ]),
       h2([.text('GitHub')]),
       p([.text('GitHub is the primary platform for all things Saber!')]),
       div(classes: 'btn-wrap', [
