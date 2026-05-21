@@ -48,11 +48,10 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-saber_landing-
 
-      - name: Install Jaspr CLI
-        run: dart pub global activate jaspr_cli
-        
+      - run: flutter pub get
+
       - name: Build Jaspr app
-        run: jaspr build --sitemap-domain https://saber.adil.hanney.org
+        run: dart run jaspr_cli:jaspr build --sitemap-domain https://saber.adil.hanney.org
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -345,6 +345,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.22.1"
+  jaspr_cli:
+    dependency: "direct dev"
+    description:
+      name: jaspr_cli
+      sha256: "2eece8b3ddd3309b9baed8061346119d7ca1c83e9ede067236f97e7f6509f6b1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.22.3"
   jaspr_content:
     dependency: "direct main"
     description:
