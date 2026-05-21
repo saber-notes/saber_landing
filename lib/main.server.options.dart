@@ -32,4 +32,5 @@ ServerOptions get defaultServerOptions => ServerOptions(
           'rough_notation_initiator',
         ),
   },
+  styles: () => [],
 );
