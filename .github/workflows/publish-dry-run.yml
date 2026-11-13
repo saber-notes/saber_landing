@@ -1,0 +1,42 @@
+name: Build no-publish
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+          cache-key: 'flutter-:os:-:channel:-:version:-:arch:'
+
+      - name: Setup cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .dart_tool/
+            build/
+          key: ${{ runner.OS }}-saber_landing-${{ hashFiles('**/pubspec.lock') }}-${{ hashFiles('**/*.dart') }}
+          restore-keys: |
+            ${{ runner.OS }}-saber_landing-
+
+      - run: flutter pub get
+
+      - name: Build Jaspr app
+        run: dart run jaspr_cli:jaspr build --sitemap-domain https://saber.adil.hanney.org
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build/jaspr/
